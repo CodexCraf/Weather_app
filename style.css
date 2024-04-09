@@ -1,0 +1,78 @@
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to right, #007bff, #00bcd4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    to {
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#myButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#myButton:hover {
+    background-color: #0056b3;
+}
+
+#weather {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#weather p {
+    margin: 10px 0;
+}
+
+#temp {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#conditions {
+    font-size: 18px;
+    color: #555;
+}
+
+#sunrise, #sunset {
+    font-size: 16px;
+    color: #777;
+}
